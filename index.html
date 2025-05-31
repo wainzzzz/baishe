@@ -107,7 +107,7 @@
 </head>
 <body>
   <audio id="bgm" loop autoplay>
-    <source src="bgm.mp3" type="audio/mpeg">
+    <source src="beijingyinyue.mp3" type="audio/mpeg">
     您的瀏覽器不支援音樂播放。
   </audio>
 
@@ -320,6 +320,9 @@
     }
 
     function startGame() {
+      const bgm = document.getElementById('bgm');
+      bgm.play();
+
       startScreen.style.display = 'none';
       game.style.display = 'flex';
       loadScene('start');
